@@ -1,8 +1,8 @@
-
 import React from "react";
 import vpn from '../assets/vpn.png'
 import copeople from '../assets/copeople.png'
 import Footer from './Footer'
+import Certificates from './Certificates'
 
 const ProjectCard = ({ image, title, description, git, technologies }) => {
     return (
@@ -52,6 +52,9 @@ const Projects = () => {
                     />
                 ))}
             </div>
+
+            <Certificates />   // added: renders certificates below projects
+
             <Footer/>
         </div>
     );
