@@ -13,7 +13,7 @@ import Projects from './components/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -21,6 +21,7 @@ root.render(
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='*' element={<Home/>} />
       </Routes>
     </BrowserRouter>
 );
