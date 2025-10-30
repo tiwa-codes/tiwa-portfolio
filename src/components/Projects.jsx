@@ -53,7 +53,7 @@ const Projects = () => {
                 ))}
             </div>
 
-            <Certificates />   // added: renders certificates below projects
+            <Certificates />{/* renders certificates below projects */}
 
             <Footer/>
         </div>
