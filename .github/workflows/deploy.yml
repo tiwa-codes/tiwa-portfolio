@@ -13,6 +13,8 @@ jobs:
           node-version: '18'
       - run: npm ci
       - run: npm run build
+      - name: SPA fallback for GitHub Pages
+        run: cp build/index.html build/404.html
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
