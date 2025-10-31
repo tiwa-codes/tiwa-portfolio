@@ -21,9 +21,12 @@
     "react-vertical-timeline-component": "^3.6.0",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://tiwa-codes.github.io/tiwa-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
