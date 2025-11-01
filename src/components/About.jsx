@@ -38,7 +38,7 @@ I started coding in 2019, blending my love for design and curiosity about how te
               I enjoy bringing structure to creativity — whether it’s organizing workflows in Notion, designing interfaces that flow naturally, or turning scattered concepts into polished projects. My work spans startups like Campus Collab, Atara Space, and NextGen Dialogues, where I explore how design, data, and community can create meaningful impact.
              <br/> Beyond <a className='text-green-300 hover:text-green-500 duration-300' href='https://github.com/tiwa-codes' target='_blank' rel='noopener noreferrer'> CODING (👆🏾click me😉) </a>, I’m drawn to the rhythm of content and communication — managing projects, documenting ideas, and building systems that help creative teams stay aligned. For me, tech is both logic and language; it’s how I build, learn, and tell better stories and also love sharing insights on technology trends through blogs and platforms like <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com/@tiwalolagold42" target='_blank' rel='noopener noreferrer'>Medium</a>, and my creative side also extends to <b>Photography</b> where i capture visual stories that inspire my design approach.</p>
             <ButtonLink
-              url='https://drive.google.com/file/d/1Yc6olBFtilEf5-Ao3gDkeFbFzFijByVk/view?usp=sharing'
+              url='https://drive.google.com/file/d/1F0cwvZJiU90coKuwbgiY7YexVL_MMoAr/view?usp=sharing'
               text='View Resume →'
               padding={`p-3`}
             />
