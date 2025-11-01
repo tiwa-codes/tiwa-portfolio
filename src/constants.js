@@ -82,6 +82,6 @@ export const experiences = [
     },
 ];
 
-export const EMAIL_JS_SERVICE_ID = process.env.REACT_APP_EMAIL_JS_SERVICE_ID;
-export const EMAIL_JS_TEMPLATE_ID = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID;
-export const EMAIL_JS_PUBLIC_KEY = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY;
+export const EMAIL_JS_SERVICE_ID = 'service_r44crb8';
+export const EMAIL_JS_TEMPLATE_ID = 'template_ipjbdgr';
+export const EMAIL_JS_PUBLIC_KEY = 'C-GLd-pHSRJBa0oZb';
