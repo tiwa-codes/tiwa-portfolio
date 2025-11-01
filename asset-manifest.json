@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/tiwa-portfolio/static/css/main.48fb5dd8.css",
+    "main.js": "/tiwa-portfolio/static/js/main.45eb63ea.js",
+    "static/js/453.1e1a8093.chunk.js": "/tiwa-portfolio/static/js/453.1e1a8093.chunk.js",
+    "static/media/metroIdentity.png": "/tiwa-portfolio/static/media/metroIdentity.c3bb5cca3a0f0dc9d2e5.png",
+    "static/media/cavic.png": "/tiwa-portfolio/static/media/cavic.3a1b2f74bda127ff5fd9.png",
+    "static/media/cert3.png": "/tiwa-portfolio/static/media/cert3.db89ebbda03c44fe6395.png",
+    "static/media/metroProfileCover.png": "/tiwa-portfolio/static/media/metroProfileCover.4d66e815efbed023dba8.png",
+    "static/media/cert1.png": "/tiwa-portfolio/static/media/cert1.9f7e73cdc46a6dcdf9b4.png",
+    "static/media/cert2.png": "/tiwa-portfolio/static/media/cert2.18e1a543460f11adcefa.png",
+    "static/media/metroCards.png": "/tiwa-portfolio/static/media/metroCards.001fd618df17c582c9f5.png",
+    "static/media/campus dashboard.png": "/tiwa-portfolio/static/media/campus dashboard.7cfe95ed7bcf396c196a.png",
+    "static/media/personal overview.png": "/tiwa-portfolio/static/media/personal overview.87a1ec03cf9ab1c9f85e.png",
+    "static/media/personal systems.png": "/tiwa-portfolio/static/media/personal systems.807df30eb90b098327bd.png",
+    "static/media/campus team.png": "/tiwa-portfolio/static/media/campus team.2729ea190695d2765a43.png",
+    "static/media/cert10.png": "/tiwa-portfolio/static/media/cert10.8e1c0c8240741c9e531a.png",
+    "static/media/campus.jpg": "/tiwa-portfolio/static/media/campus.153961723d2c550c3a13.jpg",
+    "static/media/cert4.jpg": "/tiwa-portfolio/static/media/cert4.eeef1d80534b55e4faec.jpg",
+    "static/media/cert5.jpg": "/tiwa-portfolio/static/media/cert5.b1dea599409968053e33.jpg",
+    "static/media/metroLetterhead.png": "/tiwa-portfolio/static/media/metroLetterhead.2cc2aee28f55caa3b968.png",
+    "static/media/cert8.jpg": "/tiwa-portfolio/static/media/cert8.0538d361a23db1d5a546.jpg",
+    "static/media/cert7.jpg": "/tiwa-portfolio/static/media/cert7.ceb629f88acabd143e02.jpg",
+    "static/media/cert6.jpg": "/tiwa-portfolio/static/media/cert6.eb975df434dc40b94ca8.jpg",
+    "static/media/cert9.jpg": "/tiwa-portfolio/static/media/cert9.313a0d6968b8915668bb.jpg",
+    "static/media/cert11.png": "/tiwa-portfolio/static/media/cert11.7f0a647e6a175b568de5.png",
+    "static/media/metroLogo.png": "/tiwa-portfolio/static/media/metroLogo.3776f4bf61e0ee399f89.png",
+    "static/media/slot.jpeg": "/tiwa-portfolio/static/media/slot.077b42857789be222085.jpeg",
+    "static/media/samfash.jpg": "/tiwa-portfolio/static/media/samfash.69fdc2c4e9109cd04b3d.jpg",
+    "index.html": "/tiwa-portfolio/index.html",
+    "main.48fb5dd8.css.map": "/tiwa-portfolio/static/css/main.48fb5dd8.css.map",
+    "main.45eb63ea.js.map": "/tiwa-portfolio/static/js/main.45eb63ea.js.map",
+    "453.1e1a8093.chunk.js.map": "/tiwa-portfolio/static/js/453.1e1a8093.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48fb5dd8.css",
+    "static/js/main.45eb63ea.js"
+  ]
+}
