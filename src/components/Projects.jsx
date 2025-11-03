@@ -14,6 +14,7 @@ import metroCards from '../assets/metroCards.png';
 import metroLetterhead from '../assets/metroLetterhead.png';
 import metroProfileCover from '../assets/metroProfileCover.png';
 import metroIdentity from '../assets/metroIdentity.png';
+import afostone from '../assets/afostone14.png';
 
 const ScreenshotShowcase = ({ sections = [], onOpen }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -211,6 +212,13 @@ const developmentProjects = [
         image: slot,
         git: 'https://github.com/tiwa-codes/Personal-Projects',
         technologies: ['Python', 'Game Development', 'CLI']
+    },
+    {
+        title: 'Afostone14 Enterprises Website',
+        description: 'Business website showcasing Afostone14 services with inquiry form and responsive layout.',
+        image: afostone,
+        external: 'https://www.afostone14enterprises.com',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
     }
 ];
 
