@@ -15,6 +15,10 @@ import metroLetterhead from '../assets/metroLetterhead.png';
 import metroProfileCover from '../assets/metroProfileCover.png';
 import metroIdentity from '../assets/metroIdentity.png';
 import afostone from '../assets/afostone14.png';
+import bibleSearch from '../assets/bible-search.png';
+import citizenFeedback from '../assets/citizen-feedback.png';
+import educationEda from '../assets/education-eda.png';
+import healthDqa from '../assets/health-dqa.png';
 
 const ScreenshotShowcase = ({ sections = [], onOpen }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -185,6 +189,34 @@ const ProjectCard = ({ image, title, description, git, external, technologies, s
 );
   
 const developmentProjects = [
+    {
+        title: 'Health Data Quality Pipeline',
+        description: 'Comprehensive DQA pipeline for routine health facility reports in Nigeria. Implements automated quality checks, scoring, and interactive visualization for immunization, ANC, deliveries, and OPD services with Streamlit dashboard.',
+        image: healthDqa,
+        git: 'https://github.com/tiwa-codes/health-dqa-pipeline',
+        technologies: ['Python', 'Data Quality', 'Streamlit', 'Healthcare Analytics']
+    },
+    {
+        title: 'Education Outcomes Analysis',
+        description: 'End-to-end data science project examining factors associated with basic literacy outcomes across Nigerian states. Features exploratory analysis, statistical modeling, and interactive dashboard with state/sex/location filters.',
+        image: educationEda,
+        git: 'https://github.com/tiwa-codes/education-outcomes-eda',
+        technologies: ['Python', 'Data Science', 'Jupyter Notebook', 'Streamlit']
+    },
+    {
+        title: 'Citizen Feedback Text Analysis',
+        description: 'Complete text analytics project analyzing citizen feedback about public services in Nigeria. Implements sentiment analysis, topic modeling (LDA/NMF), and interactive dashboards with comprehensive data quality checks.',
+        image: citizenFeedback,
+        git: 'https://github.com/tiwa-codes/citizen-feedback-text-analysis',
+        technologies: ['Python', 'NLP', 'Text Analytics', 'Machine Learning']
+    },
+    {
+        title: 'Bible Search Application',
+        description: 'Scripture search tool for finding and exploring Bible verses with advanced search capabilities and reference management.',
+        image: bibleSearch,
+        git: 'https://github.com/tiwa-codes/bible-search',
+        technologies: ['Python', 'Search Algorithms', 'API Development']
+    },
     {
         title: 'COVID-19 Prediction Model',
         description: 'Advanced predictive modeling project using machine learning to forecast COVID-19 trends and provide actionable insights for public health decisions. Includes data preprocessing, feature engineering, and model evaluation with visualization tools.',
