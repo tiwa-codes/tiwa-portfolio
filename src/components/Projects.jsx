@@ -19,6 +19,7 @@ import bibleSearch from '../assets/bible-search.png';
 import citizenFeedback from '../assets/citizen-feedback.png';
 import educationEda from '../assets/education-eda.png';
 import healthDqa from '../assets/health-dqa.png';
+import ntal from '../assets/ntal.png';
 
 const ScreenshotShowcase = ({ sections = [], onOpen }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -209,6 +210,13 @@ const developmentProjects = [
         image: citizenFeedback,
         git: 'https://github.com/tiwa-codes/citizen-feedback-text-analysis',
         technologies: ['Python', 'NLP', 'Text Analytics', 'Machine Learning']
+    },
+    {
+        title: 'NTAL Telehealth MVP',
+        description: 'Inclusive, safe telehealth platform via USSD/SMS/WhatsApp and offline-first CHW app. Features store-and-forward triage, provider dashboard, JWT authentication, PWA support, and multi-channel access with FHIR-based clinical data.',
+        image: ntal,
+        git: 'https://github.com/tiwa-codes/NTAL',
+        technologies: ['TypeScript', 'React', 'Python', 'FastAPI', 'Healthcare']
     },
     {
         title: 'Bible Search Application',
