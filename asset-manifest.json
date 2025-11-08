@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/tiwa-portfolio/static/css/main.48fb5dd8.css",
-    "main.js": "/tiwa-portfolio/static/js/main.45eb63ea.js",
+    "main.js": "/tiwa-portfolio/static/js/main.b3db639d.js",
     "static/js/453.1e1a8093.chunk.js": "/tiwa-portfolio/static/js/453.1e1a8093.chunk.js",
+    "static/media/afostone14.png": "/tiwa-portfolio/static/media/afostone14.b7e1918b585a83b3d975.png",
     "static/media/metroIdentity.png": "/tiwa-portfolio/static/media/metroIdentity.c3bb5cca3a0f0dc9d2e5.png",
     "static/media/cavic.png": "/tiwa-portfolio/static/media/cavic.3a1b2f74bda127ff5fd9.png",
     "static/media/cert3.png": "/tiwa-portfolio/static/media/cert3.db89ebbda03c44fe6395.png",
@@ -27,13 +28,18 @@
     "static/media/metroLogo.png": "/tiwa-portfolio/static/media/metroLogo.3776f4bf61e0ee399f89.png",
     "static/media/slot.jpeg": "/tiwa-portfolio/static/media/slot.077b42857789be222085.jpeg",
     "static/media/samfash.jpg": "/tiwa-portfolio/static/media/samfash.69fdc2c4e9109cd04b3d.jpg",
+    "static/media/education-eda.png": "/tiwa-portfolio/static/media/education-eda.019fb388564a6a68151c.png",
+    "static/media/citizen-feedback.png": "/tiwa-portfolio/static/media/citizen-feedback.6639c925c5c565e76f83.png",
+    "static/media/bible-search.png": "/tiwa-portfolio/static/media/bible-search.feb655a6a5f1a2ffe12e.png",
+    "static/media/health-dqa.png": "/tiwa-portfolio/static/media/health-dqa.9ebf0e10b4e3ddbaa1ec.png",
+    "static/media/ntal.png": "/tiwa-portfolio/static/media/ntal.13108f7936ed33d59eef.png",
     "index.html": "/tiwa-portfolio/index.html",
     "main.48fb5dd8.css.map": "/tiwa-portfolio/static/css/main.48fb5dd8.css.map",
-    "main.45eb63ea.js.map": "/tiwa-portfolio/static/js/main.45eb63ea.js.map",
+    "main.b3db639d.js.map": "/tiwa-portfolio/static/js/main.b3db639d.js.map",
     "453.1e1a8093.chunk.js.map": "/tiwa-portfolio/static/js/453.1e1a8093.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48fb5dd8.css",
-    "static/js/main.45eb63ea.js"
+    "static/js/main.b3db639d.js"
   ]
 }
