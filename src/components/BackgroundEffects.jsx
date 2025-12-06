@@ -30,7 +30,7 @@ const BackgroundEffects = () => {
   }
 
   return (
-    <div className="circles" aria-hidden="true">
+    <ul className="circles" aria-hidden="true">
       <li></li>
       <li></li>
       <li></li>
@@ -41,7 +41,7 @@ const BackgroundEffects = () => {
       <li></li>
       <li></li>
       <li></li>
-    </div>
+    </ul>
   );
 };
 

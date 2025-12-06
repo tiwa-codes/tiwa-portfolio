@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project, onOpenModal }) => {
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const prefersReducedMotion = useMemo(() => 
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    []
+  );
 
   const cardVariants = {
     hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 20 },
