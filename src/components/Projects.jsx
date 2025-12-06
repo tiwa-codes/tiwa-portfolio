@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import predict from '../assets/predict.png'
-import hunt from '../assets/hunt.jpeg'
-import slot from '../assets/slot.jpeg'
-import flutter from '../assets/flutter.jpeg'
-import Footer from './Footer'
-import Certificates from './Certificates'
+import { motion } from 'framer-motion';
+import { projects } from '../constants';
+import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
+import Footer from './Footer';
+import Certificates from './Certificates';
 import campusDashboard from '../assets/campus dashboard.png';
 import campusTeam from '../assets/campus team.png';
 import personalOverview from '../assets/personal overview.png';
@@ -14,12 +14,6 @@ import metroCards from '../assets/metroCards.png';
 import metroLetterhead from '../assets/metroLetterhead.png';
 import metroProfileCover from '../assets/metroProfileCover.png';
 import metroIdentity from '../assets/metroIdentity.png';
-import afostone from '../assets/afostone14.png';
-import bibleSearch from '../assets/bible-search.png';
-import citizenFeedback from '../assets/citizen-feedback.png';
-import educationEda from '../assets/education-eda.png';
-import healthDqa from '../assets/health-dqa.png';
-import ntal from '../assets/ntal.png';
 
 const ScreenshotShowcase = ({ sections = [], onOpen }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -154,7 +148,10 @@ const CaseStudyDetails = ({ meta }) => (
     </div>
 );
 
-const ProjectCard = ({ image, title, description, git, external, technologies, sections, meta, onOpenSection }) => (
+// Old ProjectCard component removed - now using the new ProjectCard from separate file
+
+// For design and systems projects, we'll create a local card component to maintain backward compatibility
+const OldProjectCard = ({ image, title, description, git, external, technologies, sections, meta, onOpenSection }) => (
     <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <span>
             <img className="w-full rounded-t-lg h-auto object-cover " src={image} alt={title} />
@@ -188,79 +185,6 @@ const ProjectCard = ({ image, title, description, git, external, technologies, s
         </div>
     </div>
 );
-  
-const developmentProjects = [
-    {
-        title: 'Health Data Quality Pipeline',
-        description: 'Comprehensive DQA pipeline for routine health facility reports in Nigeria. Implements automated quality checks, scoring, and interactive visualization for immunization, ANC, deliveries, and OPD services with Streamlit dashboard.',
-        image: healthDqa,
-        git: 'https://github.com/tiwa-codes/health-dqa-pipeline',
-        technologies: ['Python', 'Data Quality', 'Streamlit', 'Healthcare Analytics']
-    },
-    {
-        title: 'Education Outcomes Analysis',
-        description: 'End-to-end data science project examining factors associated with basic literacy outcomes across Nigerian states. Features exploratory analysis, statistical modeling, and interactive dashboard with state/sex/location filters.',
-        image: educationEda,
-        git: 'https://github.com/tiwa-codes/education-outcomes-eda',
-        technologies: ['Python', 'Data Science', 'Jupyter Notebook', 'Streamlit']
-    },
-    {
-        title: 'Citizen Feedback Text Analysis',
-        description: 'Complete text analytics project analyzing citizen feedback about public services in Nigeria. Implements sentiment analysis, topic modeling (LDA/NMF), and interactive dashboards with comprehensive data quality checks.',
-        image: citizenFeedback,
-        git: 'https://github.com/tiwa-codes/citizen-feedback-text-analysis',
-        technologies: ['Python', 'NLP', 'Text Analytics', 'Machine Learning']
-    },
-    {
-        title: 'NTAL Telehealth MVP',
-        description: 'Inclusive, safe telehealth platform via USSD/SMS/WhatsApp and offline-first CHW app. Features store-and-forward triage, provider dashboard, JWT authentication, PWA support, and multi-channel access with FHIR-based clinical data.',
-        image: ntal,
-        git: 'https://github.com/tiwa-codes/NTAL',
-        technologies: ['TypeScript', 'React', 'Python', 'FastAPI', 'Healthcare']
-    },
-    {
-        title: 'Bible Search Application',
-        description: 'Scripture search tool for finding and exploring Bible verses with advanced search capabilities and reference management.',
-        image: bibleSearch,
-        git: 'https://github.com/tiwa-codes/bible-search',
-        technologies: ['Python', 'Search Algorithms', 'API Development']
-    },
-    {
-        title: 'COVID-19 Prediction Model',
-        description: 'Advanced predictive modeling project using machine learning to forecast COVID-19 trends and provide actionable insights for public health decisions. Includes data preprocessing, feature engineering, and model evaluation with visualization tools.',
-        image: predict,
-        git: 'https://github.com/tiwa-codes/Capstone-Project',
-        technologies: ['Python', 'Machine Learning', 'Jupyter Notebook', 'Data Science']
-    },
-    {
-        title: 'Job Hunt Platform',
-        description: 'A comprehensive job hunting website featuring job listings, candidate profiles, employer dashboards, and advanced search functionality. Includes user authentication, job posting capabilities, and responsive design.',
-        image: hunt,
-        git: 'https://github.com/tiwa-codes/job-hunt',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Web Design']
-    },
-    {
-        title: 'Flutter Mobile Projects',
-        description: 'Collection of mobile applications built with Flutter framework, demonstrating cross-platform development skills for iOS and Android. Features modern UI/UX design patterns and native performance.',
-        image: flutter,
-        git: 'https://github.com/tiwa-codes/flutter-projects',
-        technologies: ['Flutter', 'Dart', 'Mobile Development', 'C++']
-    },
-    {
-        title: 'Slot Machine Game',
-        description: 'Interactive Python betting game featuring a slot machine simulation with multiple betting lines and dynamic prize calculations. Players can deposit funds, place bets, and track their balance in real-time.',
-        image: slot,
-        git: 'https://github.com/tiwa-codes/Personal-Projects',
-        technologies: ['Python', 'Game Development', 'CLI']
-    },
-    {
-        title: 'Afostone14 Enterprises Website',
-        description: 'Business website showcasing Afostone14 services with inquiry form and responsive layout.',
-        image: afostone,
-        external: 'https://www.afostone14enterprises.com',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS']
-    }
-];
 
 const designProjects = [
     {
@@ -357,25 +281,45 @@ const systemsProjects = [
 
 const Projects = () => {
     const [activeSection, setActiveSection] = useState(null);
+    const [selectedProject, setSelectedProject] = useState(null);
     const closeModal = () => setActiveSection(null);
+    const closeProjectModal = () => setSelectedProject(null);
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     return (
         <div className="bg-black">
             <div className="mx-auto max-w-6xl px-6 py-16 space-y-16">
-                <section id="development">
-                    <h2 className="text-3xl font-bold text-white mb-8">Development Projects</h2>
-                    <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
-                        {developmentProjects.map((item) => (
-                            <ProjectCard key={item.title} {...item} onOpenSection={setActiveSection} />
+                <motion.section
+                    id="projects"
+                    initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-100px' }}
+                    transition={{ duration: prefersReducedMotion ? 0.01 : 0.6 }}
+                >
+                    <p className="text-emerald-400 font-semibold uppercase tracking-wide mb-2">
+                        My Work
+                    </p>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Development Projects</h2>
+                    <p className="text-gray-400 text-lg mb-8 max-w-2xl">
+                        A collection of projects showcasing my skills in web development, data science, and software engineering.
+                    </p>
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        {projects.map((project) => (
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                                onOpenModal={setSelectedProject}
+                            />
                         ))}
                     </div>
-                </section>
+                </motion.section>
 
                 <section id="design">
                     <h2 className="text-3xl font-bold text-white mb-8">Design Case Studies</h2>
                     <div className="grid gap-8 lg:grid-cols-2">
                         {designProjects.map((item) => (
-                            <ProjectCard key={item.title} {...item} onOpenSection={setActiveSection} />
+                            <OldProjectCard key={item.title} {...item} onOpenSection={setActiveSection} />
                         ))}
                     </div>
                 </section>
@@ -384,7 +328,7 @@ const Projects = () => {
                     <h2 className="text-3xl font-bold text-white mb-8">Systems & Ops</h2>
                     <div className="grid gap-8 lg:grid-cols-2">
                         {systemsProjects.map((item) => (
-                            <ProjectCard key={item.title} {...item} onOpenSection={setActiveSection} />
+                            <OldProjectCard key={item.title} {...item} onOpenSection={setActiveSection} />
                         ))}
                     </div>
                 </section>
@@ -420,6 +364,11 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+            )}
+
+            {/* New Project Modal */}
+            {selectedProject && (
+                <ProjectModal project={selectedProject} onClose={closeProjectModal} />
             )}
 
             <Certificates />
