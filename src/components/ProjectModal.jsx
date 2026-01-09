@@ -6,6 +6,11 @@ const ProjectModal = ({ project, onClose }) => {
   const firstFocusableRef = useRef(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const prefersReducedMotion = useMemo(() => 
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    []
+  );
+
   // Focus trap and keyboard handling
   useEffect(() => {
     if (!project) return;
@@ -63,11 +68,6 @@ const ProjectModal = ({ project, onClose }) => {
   const handleNextImage = () => {
     setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
-
-  const prefersReducedMotion = useMemo(() => 
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-    []
-  );
 
   const backdropVariants = {
     hidden: { opacity: 0 },

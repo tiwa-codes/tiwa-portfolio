@@ -6,11 +6,8 @@ import predict from './assets/predict.png';
 import hunt from './assets/hunt.jpeg';
 import slot from './assets/slot.jpeg';
 import flutter from './assets/flutter.jpeg';
-import bibleSearch from './assets/bible-search.png';
-import citizenFeedback from './assets/citizen-feedback.png';
 import educationEda from './assets/education-eda.png';
 import healthDqa from './assets/health-dqa.png';
-import ntal from './assets/ntal.png';
 import afostone from './assets/afostone14.png';
 
 
@@ -116,36 +113,6 @@ export const projects = [
         screenshots: [educationEda],
         technologies: ['Python', 'Data Science', 'Jupyter Notebook', 'Streamlit'],
         repoLink: 'https://github.com/tiwa-codes/education-outcomes-eda',
-        demoLink: null,
-    },
-    {
-        id: 'citizen-feedback',
-        title: 'Citizen Feedback Text Analysis',
-        description: 'Complete text analytics project analyzing citizen feedback about public services in Nigeria. Implements sentiment analysis, topic modeling (LDA/NMF), and interactive dashboards with comprehensive data quality checks.',
-        image: citizenFeedback,
-        screenshots: [citizenFeedback],
-        technologies: ['Python', 'NLP', 'Text Analytics', 'Machine Learning'],
-        repoLink: 'https://github.com/tiwa-codes/citizen-feedback-text-analysis',
-        demoLink: null,
-    },
-    {
-        id: 'ntal',
-        title: 'NTAL Telehealth MVP',
-        description: 'Inclusive, safe telehealth platform via USSD/SMS/WhatsApp and offline-first CHW app. Features store-and-forward triage, provider dashboard, JWT authentication, PWA support, and multi-channel access with FHIR-based clinical data.',
-        image: ntal,
-        screenshots: [ntal],
-        technologies: ['TypeScript', 'React', 'Python', 'FastAPI', 'Healthcare'],
-        repoLink: 'https://github.com/tiwa-codes/NTAL',
-        demoLink: null,
-    },
-    {
-        id: 'bible-search',
-        title: 'Bible Search Application',
-        description: 'Scripture search tool for finding and exploring Bible verses with advanced search capabilities and reference management.',
-        image: bibleSearch,
-        screenshots: [bibleSearch],
-        technologies: ['Python', 'Search Algorithms', 'API Development'],
-        repoLink: 'https://github.com/tiwa-codes/bible-search',
         demoLink: null,
     },
     {

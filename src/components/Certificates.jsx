@@ -10,6 +10,7 @@ import cert8 from '../assets/cert8.jpg';
 import cert9 from '../assets/cert9.jpg';
 import cert10 from '../assets/cert10.png';
 import cert11 from '../assets/cert11.png';
+import cert12 from '../assets/cert12.png';
 
 const CertificateCard = ({ cert, onOpen }) => (
     <div className="bg-gray-900 border border-neutral-100 rounded-lg shadow p-3">
@@ -102,6 +103,13 @@ const Certificates = () => {
             issuer: 'NVIDIA Deep Learning Institute',
             date: 'Jul 2025',
             image: cert11,
+            link: ''
+        },
+        {
+            title: 'McKinsey Forward Program',
+            issuer: 'McKinsey & Company',
+            date: 'Jan 2025',
+            image: cert12,
             link: ''
         }
     ];
