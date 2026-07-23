@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Mariam Tiwalola Afolabi — Writing &amp; field notes</title>
+    <link>https://tiwa-codes.github.io/tiwa-portfolio/blog</link>
+    <description>Writing on engineering, building in Africa, and lessons from shipping production software.</description>
+    <language>en</language>
+    <item>
+      <title>Why I reach for Next.js on almost every project</title>
+      <link>https://tiwa-codes.github.io/tiwa-portfolio/blog/why-i-chose-nextjs-for-everything</link>
+      <guid>https://tiwa-codes.github.io/tiwa-portfolio/blog/why-i-chose-nextjs-for-everything</guid>
+      <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+      <description>After building ERPs, government platforms, and client sites in Next.js, here&apos;s what makes it worth the complexity — and where it falls short.</description>
+    </item>
+    <item>
+      <title>Building in public: lessons from a Nigerian developer</title>
+      <link>https://tiwa-codes.github.io/tiwa-portfolio/blog/building-in-public-lessons-from-a-nigerian-dev</link>
+      <guid>https://tiwa-codes.github.io/tiwa-portfolio/blog/building-in-public-lessons-from-a-nigerian-dev</guid>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 GMT</pubDate>
+      <description>What two years of freelancing across healthcare, government, and social impact taught me about shipping software that actually matters.</description>
+    </item>
+  </channel>
+</rss>

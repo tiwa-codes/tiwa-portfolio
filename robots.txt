@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://tiwa-codes.github.io/tiwa-portfolio/sitemap.xml
